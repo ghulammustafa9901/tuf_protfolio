@@ -57,7 +57,7 @@
 						$userPhoneNumber = $usersArray['phonenumber'];
 						$userCountry = $usersArray['country'];
 						$userAddress = $usersArray['address'];
-						$userGender = $usersArray['gender'];
+						$userGender = $usersArray['gender']; 
 						$userProfile = $usersArray['profile'];
 
 						if($statusValue == 1) {
@@ -69,7 +69,7 @@
 							$_SESSION['country'] = $userCountry;
 							$_SESSION['address'] = $userAddress;
 							$_SESSION['gender'] = $userGender;
-							$_SESSION['profile'] = $userProfile;
+							if($userProfile != '') { $_SESSION['profile'] = $userProfile; }
 							$_SESSION['id'] = $userID;
 
 							header("Location: dashboard.php");

@@ -65,23 +65,7 @@
               name="newpassword"
               id="newpassword"
               method="POST"
-              action="action_newpassword.php">
-
-              <!-- <div class="form-group">
-                <input
-                  class="d-none"
-                  name="token"
-                  type="type"
-                  value="<?php //echo @$tokenShow ?>">
-              </div>
-
-              <div class="form-group">
-                <input
-                  class="d-none"
-                  name="email"
-                  type="type"
-                  value="<?php //echo @$emailShow ?>">
-              </div> -->
+              action="action_newpassword.php?email=<?php echo $emailShow?>&token=<?php echo $tokenShow?>">
 
               <div class="form-group form-group-show-PWD">
                 <label for="text">New Password</label>

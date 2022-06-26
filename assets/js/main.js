@@ -15,9 +15,9 @@ $(document).ready(function() {
     if(!(file_type == "jpg" || file_type == "jpeg" || file_type == "png")) {
       $("#error_EP_IMG").addClass("mb-2");
       $("#error_EP_IMG").text("Only Upload JPG, JPEG and PNG");
-    } else if (!(file_size < 3145728)) {
+    } else if (!(file_size < 8388608)) {
       $("#error_EP_IMG").addClass("mb-2");
-      $("#error_EP_IMG").text("Your Image Size is Large...");
+      $("#error_EP_IMG").text("Your Image Size is Larger than 8MB ...");
     } else {
       $("#error_EP_IMG").removeClass("mb-2");
       $("#error_EP_IMG").text("");
@@ -65,7 +65,7 @@ $(document).ready(function() {
           $.ajax({
             type: "POST",
             dataType: "json",
-            url: "profile.php",
+            url: "profile_store.php",
             data: {image: base64data},
             success: function(data) { 
               bs_modal.modal('hide');

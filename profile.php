@@ -55,6 +55,8 @@
       $profileShow = 'assets/img/empty_profile.png';
   }
 
+  
+
 ?>
 
 <!DOCTYPE html>
@@ -291,6 +293,13 @@
                                 document.getElementById("ep_phonenumber").focus();
                               </script>';
                         echo '<div class="error-style" id="error_EP_PN">Please Enter Your Phone Number</div>';
+                      } elseif (strpos($fullUrl, "PNE=lenght")) {
+                        echo '<script type="text/javascript">
+                                document.getElementById("ep_phonenumber").style.borderColor = "#aa0000";
+                                document.getElementById("ep_phonenumber").style.boxShadow = "0 0 9px rgba(170, 0, 0, 0.25)";
+                                document.getElementById("ep_phonenumber").focus();
+                              </script>';
+                        echo '<div class="error-style" id="error_EP_PN">Please enter between 11 and 14 characters</div>';
                       } elseif (strpos($fullUrl, "PNE=invalid")) {
                         echo '<script type="text/javascript">
                                 document.getElementById("ep_phonenumber").style.borderColor = "#aa0000";

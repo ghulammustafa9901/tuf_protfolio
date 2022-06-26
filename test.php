@@ -7,5 +7,6 @@
 
     // echo $hi;
 
-    
+    // header("Location: profile.php?hi=$profile_path");
+    // Exists();
 ?>

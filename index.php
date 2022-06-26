@@ -1,8 +1,4 @@
-<?php
-  require 'include/config.php';
-
-  
-?>
+<?php require 'include/config.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -15,18 +11,7 @@
 
   <div class="container">
     
-    <h1 class="text-center my-5 py-5"> Welcome TO TuF Portfolio</h1>
-
-    <!-- <div class="card mb-2">
-      <div class="card-header">
-       Question Text
-       <a href="#" class="mx-2 btn-link">Show</a> | 
-       <a href="#" class="ml-2 btn-link">Remove</a>
-      </div>
-      <div class="card-body">
-        Question Answer
-      </div>
-    </div> -->
+    <h1 class="text-center my-5 py-5"> Welcome To <?php echo $projectName ?></h1>
 
   </div> 
 

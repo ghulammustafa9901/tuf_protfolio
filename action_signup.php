@@ -138,10 +138,6 @@
 			Exists();
 		}
 
-		// $query = "INSERT INTO users(fullname,username,email,password,token,status,time) VALUES('$fullname','$username','$email','$password','$token','0', $time)";
-			// $fire = mysqli_query($con,$query);
-
-		// $fullname_valid = $username_valid = $email_valid = $password_valid = $confirmPassword_valid = true;
 
 		//Insert Data into Database
 		if($fullname_valid = true && $username_valid = true && $email_valid = true && $password_valid = true && $confirmPassword_valid = true) {
@@ -153,27 +149,27 @@
 									<div style="margin: 100px auto; width: 70%; font-family: Raleway, sans-serif;">
 										<div style="box-shadow: 0 0 9px rgba(0, 0, 0, 0.25); border:1px solid #dadce0; border-radius: 8px; overflow: hidden;">
 												<div style="text-align: center; padding: 50px; color: #fff; background-color: #343a40;">
-														<h1>TUF Portfolio</h1>
+														<h1>'.$projectName.'</h1>
 												</div>
 
 												<div style="text-align: center; width: 80%; margin: 30px auto; font-size: 18px; color:rgba(0,0,0,0.87);">
 														<p>Hello '.$username.',</p>
-														<p>Thank you for registering your TUF Portfolio. To finally activate your account please click the following button</p>
+														<p>Thank you for registering your '.$projectName.'. To finally activate your account please click the following button</p>
 														<a style="color: #fff; text-decoration: none; border: 1px solid #343a40; border-radius: 5px; padding: 7px 12px; margin: 6px; display: inline-block; background-color: #343a40;"
 															 href="'.$serverName.'activate.php?token='.$token.'">
 																Activate Account
 														</a>
 														<p>If clicking the button does not work you can copy the button link into your browser window or type it there directly.</p>
-														<p>Regards <br> Your TUF Portfolio Team</p>
-														<a style="color: #343a40;"  href="#">www.tufportfolio.com</a>
+														<p>Regards <br> Your '.$projectName.' Team</p>
+														<a style="color: #343a40;"  href="'.$serverName.'">'.$serverName.'</a>
 												</div>
 
 										</div>
 
 										<div style="text-align: center; font-size: 12px; width: 95%; margin: 19px auto; color: #5f6368;">
-												If you do not want to receive emails from TUF Portolio, you can <a style="color: #343a40;" href="#">unsubscribe</a>.
+												If you do not want to receive emails from '.$projectName.', you can <a style="color: #343a40;" href="#">unsubscribe</a>.
 												<br><br>
-												You have received this email because you or someone else has confirmed the email address. This would like to receive email communication from TUF Portfolio. We will never share your personal information (such as your email address with any other 3rd party without your consent).
+												You have received this email because you or someone else has confirmed the email address. This would like to receive email communication from '.$projectName.'. We will never share your personal information (such as your email address with any other 3rd party without your consent).
 												<br><br>
 												This email was sent by: West Canal Road, Faisal Town, Faisalabad, Pakistan
 										</div>

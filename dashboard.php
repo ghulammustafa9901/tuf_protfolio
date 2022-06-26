@@ -15,7 +15,7 @@
   <?php include 'navbar.php'; ?>
 
   <h2 class="text-center mt-5">
-    HELLO <?php echo @$_SESSION['username'] ?>
+    Asslam-o-Alaikum <?php echo @$_SESSION['fullname'] ?>
   </h2>
   
   <div>
@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="">
-            Edit Profile
+            
           </div>
         </div>
       </div>

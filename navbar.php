@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container">
         <a class="navbar-brand mb-0 mr-0 h1" href="index.php">
-            Tuf Portfolio
+            <?php echo $projectName ?>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#a">

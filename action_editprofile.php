@@ -14,9 +14,6 @@
 		// $profile_path = $_SESSION['profile_path'];
 		$profile_path = $_COOKIE['profile_path'];
 
-		// header("Location: profile.php?hi=$profile_path");
-		// Exists();
-
 		$fullname_valid = $username_valid = $email_valid = $phonenumber_valid = $address_valid = $gender_valid = $country_valid = false;
 
 		// For Fullname Validation
@@ -131,7 +128,7 @@
 		// For Phone Number Validation
 		if(!empty($phonenumber)) {
 			if(strlen($phonenumber) >= 11 && strlen($phonenumber) <= 14) {
-				if(!preg_match('/[^a-zA-Z\d_-,.]/', $phonenumber)) {
+				if(!preg_match('/[^\d]/', $phonenumber)) {
 
                     // If user a not change the phone number
                     $query = "SELECT * FROM users WHERE id='$userID'";
@@ -178,7 +175,7 @@
 		// For Address Validation
 		if(!empty($address)) {
 			if(strlen($address) >= 10 && strlen($address) <= 30) {
-				if(!preg_match('/[^a-zA-Z\s]/', $address)) {
+				if(!preg_match('/[^a-zA-Z\d\s_-,.]/', $address)) {
 					$address_valid = true;
 					header("Location: profile.php?FN=$fullname&UN=$username&EM=$email&PN=$phonenumber&ADDR=$address&FNE=success&UNE=success&EME=success&PNE=success&ADDRE=success");
                 } else {
