@@ -142,3 +142,15 @@ img {
   overflow-y: hidden;
   margin-top: -56px;
 }
+
+.singin-last-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+@media (max-width: 576px) {
+  .singin-last-div {
+    display: block;
+  }
+}

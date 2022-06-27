@@ -42,7 +42,7 @@
     ?>
     
     <div class="row">
-      <div class="offset-md-3 col-md-6 font-weight-bold text-dark">
+      <div class="offset-lg-3 col-lg-6 col-md-12 font-weight-bold text-dark">
         <div class="card my-5">
           <div class="card-header lead font-weight-bold text-uppercase text-center">
             Change Password
