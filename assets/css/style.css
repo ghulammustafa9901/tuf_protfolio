@@ -124,6 +124,21 @@ img {
   overflow: hidden;
   width: 160px; 
   height: 160px;
-  margin: 10px;
+  margin: 16px auto;
+  margin-bottom: 0;
   border: 1px solid red;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.for_footer {
+  height: 100vh;
+  margin-bottom: -40px;
+  overflow-y: hidden;
+  margin-top: -56px;
 }

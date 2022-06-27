@@ -14,23 +14,13 @@
 
   <?php include 'navbar.php'; ?>
 
-  <h2 class="text-center mt-5">
-    Asslam-o-Alaikum <?php echo @$_SESSION['fullname'] ?>
-  </h2>
-  
-  <div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="">
-            
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container for_footer">
+    <h2 class="text-center my-5 py-5">
+      Asslam-o-Alaikum <?php echo @$_SESSION['fullname'] ?>
+    </h2>
   </div>
-
   
+  <?php include 'footer.php'; ?>
 
   <?php require_once 'include/js_libraries.php' ?>
 

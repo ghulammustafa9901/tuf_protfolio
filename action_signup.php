@@ -142,7 +142,7 @@
 		//Insert Data into Database
 		if($fullname_valid = true && $username_valid = true && $email_valid = true && $password_valid = true && $confirmPassword_valid = true) {
 			
-			$query = "INSERT INTO users(fullname,username,email,password,token,status,time) VALUES('$fullname','$username','$email','$password','$token','0', $time)";
+			$query = "INSERT INTO users(fullname,username,email,password,token,status,time) VALUES('$fullname','$username','$email','$password','$token','0', '$time')";
 			$fire = mysqli_query($con,$query);
 			
 			$body = '<div style="@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");">

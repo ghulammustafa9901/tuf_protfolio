@@ -180,7 +180,7 @@
     </div>
 
   </div>
-
+  <?php include 'footer.php'; ?>
   <?php require_once 'include/js_libraries.php' ?>
 
 </body>

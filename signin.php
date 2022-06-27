@@ -61,7 +61,7 @@
       }
     ?>
 
-    <div class="row">
+    <div class="row ">
       <div class="offset-md-3 col-md-6 font-weight-bold text-dark">
         <div class="card my-5">
           <div class="card-header lead font-weight-bold text-uppercase text-center">
@@ -202,6 +202,8 @@
     </div>
 
   </div>
+
+  <?php include 'footer.php'; ?>
 
   <?php require_once 'include/js_libraries.php' ?>
 
